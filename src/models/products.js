@@ -31,7 +31,7 @@ class Products {
   }
 
   sanitize(entry) {
-    let valid = true:
+    let valid = true;
     let record = {};
 
     Object.keys(schema).forEach(beach => {

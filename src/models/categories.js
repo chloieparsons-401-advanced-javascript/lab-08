@@ -7,7 +7,7 @@ const uuid = require('uuid/v4');
 const schema = {
   id: {required: true},
   name: {required: true},
-  region: {required: true},  
+  airport_code: {required: true},  
 };
 
 class Categories {
@@ -52,7 +52,7 @@ class Categories {
   }
 
   sanitize(entry) {
-    let valid = true:
+    let valid = true;
     let record = {};
 
     Object.keys(schema).forEach(beach => {
