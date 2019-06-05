@@ -18,7 +18,7 @@ describe('Categories Model', () => {
       });
   });
 
-  it('can get() all team objects from database', () => {
+  it('can get() all beach objects from database', () => {
     let obj = {name: 'Doctor\'s Cave Beach', airport_code: 'MBJ'};
 
     return categories.post(obj)
@@ -50,4 +50,33 @@ describe('Categories Model', () => {
       });
   });
 
+  it('can use put() to update the beach object in the database', () => {
+    let obj = {name: 'Doctor\'s Cave Beach', airport_code: 'MBJ'};
+
+    return categories.post(obj)
+      .then(records => {
+        return categories.put(records.id, {id: records.id, name: 'Cornwall Beach',
+          airport_code: 'MBJ',  
+        })
+          .then(records => {
+            expect(records).toBeDefined();
+            expect(records.id).toBeDefined();
+            expect(records.name).toEqual('Cornwall Beach');
+            expect(records.airport_code).toEqual(obj.airport_code);
+          });
+      });
+  });
+
+  it('can use delete() to remove the beach object from the database', () => {
+    let obj = {name: 'Doctor\'s Cave Beach', airport_code: 'MBJ'};
+
+    return categories.post(obj)
+      .then(records => {
+        return categories.delete(records.id) 
+        })            
+          .then(records => {
+            expect(records).toBeUndefined();
+          });
+  });
+  
 });
