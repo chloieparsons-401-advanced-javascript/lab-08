@@ -1,7 +1,7 @@
 {
   "name": "api-server-solution",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project Name: data-modeling Author: Chloie Parsons",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
@@ -28,5 +28,13 @@
     "mongodb-memory-server": "^2.9.3",
     "supertest": "^3.4.2",
     "uuid": "^3.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloieparsons-401-advanced-javascript/lab-08.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chloieparsons-401-advanced-javascript/lab-08/issues"
+  },
+  "homepage": "https://github.com/chloieparsons-401-advanced-javascript/lab-08#readme"
 }
