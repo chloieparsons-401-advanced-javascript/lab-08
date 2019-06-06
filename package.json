@@ -30,7 +30,8 @@
     "lint": "^0.6.5",
     "mongodb-memory-server": "^2.9.3",
     "supertest": "^3.4.2",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "uuid-v4": "^0.1.0"
   },
   "repository": {
     "type": "git",

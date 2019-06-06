@@ -2,7 +2,7 @@
 
 //idea = name: beaches & region: caribe, east caribe, etc.
 
-const uuid = require('uuid/v4');
+const uuid = require('uuid-v4');
 
 const schema = {
   id: {required: true},
