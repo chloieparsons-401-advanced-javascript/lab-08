@@ -24,15 +24,15 @@
     "ipaddr.js": "^1.9.0",
     "mongoose": "^5.5.13",
     "mongoose-schema-jsonschema": "^1.2.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "lint": "^0.6.5",
     "mongodb-memory-server": "^2.9.3",
-    "supertest": "^3.4.2",
-    "uuid": "^3.3.2"
+    "supertest": "^3.4.2"
   },
   "repository": {
     "type": "git",
