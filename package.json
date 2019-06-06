@@ -4,7 +4,7 @@
   "description": "Project Name: data-modeling Author: Chloie Parsons",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint",
     "start": "node index.js",
     "test": "jest --verbose",
     "test-watch": "jest --watchAll --verbose"
