@@ -7,7 +7,9 @@
     "lint": "eslint",
     "start": "node index.js",
     "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test-watch": "jest --watchAll --verbose",
+    "push-check": "npm test && npm run lint && npm build-docs",
+    "build-docs": "jsdoc . && open docs/index.html"
   },
   "jest": {
     "testEnvironment": "node"
